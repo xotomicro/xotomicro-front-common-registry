@@ -57,10 +57,6 @@ jobs:
                   token: ${{ secrets.GITHUB_TOKEN }}
                   registry: "https://npm.pkg.github.com"
 
-            # - name: publish packages
-            #   run: |
-            #       npx np --branch development --no-tests patch
-
     notify:
         name: notify
         runs-on: ubuntu-latest
